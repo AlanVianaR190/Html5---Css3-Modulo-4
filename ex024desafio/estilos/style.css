@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    /* A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. */
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100vw;
+    width: 100vw;
+    background-color: black;
+}
+body{
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    /* A propriedade background-attachment especifica como o plano de fundo de um elemento deve comportar-se em relação à rolagem da página. */
+    background-attachment: fixed;
+}
+main{
+    height: 100vw;
+    position: relative;
+}
+section#celular{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* A propriedade transform permite aplicar transformações 2D ou 3D em elementos, como translação (movimento), rotação, escala (redimensionamento) e inclinação (skew). */
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png');
+}
