@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100vw;
+}
+a{
+    /* A propriedade display é fundamental para controlar o layout e a renderização de elementos em uma página web. */
+    display: block;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    /* A propriedade text-decoration é usada para definir a aparência das decorações de texto, como sublinhados, linhas sobre o texto, linhas através do texto e piscantes */
+    text-decoration: none;
+}
+a:hover{
+    background-color: red;
+}
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
