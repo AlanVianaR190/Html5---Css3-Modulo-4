@@ -45,14 +45,16 @@ section#redes{
 section#redes img{
     width: 50px;
     margin: 10px;
+    /* A propriedade border-radius é usada para adicionar cantos arredondados aos elementos. */
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
-    /*  */
+    /* A propriedade box-sizing usada para alterar a forma como a largura e a altura de um elemento são calculadas. */
     box-sizing: border-box;
 }
 section#redes img:hover{
     border: 2px solid rgb(255, 255, 255, 0.650);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.620);
+    /* A propriedade transition é usada para aplicar efeitos de transição suave quando uma propriedade CSS muda de valor. */
     transition: transform .3s border 1s;
 }
