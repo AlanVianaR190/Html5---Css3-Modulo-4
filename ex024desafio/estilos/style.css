@@ -39,7 +39,16 @@ iframe#tela{
     height: 472px;
     width: 267px;
 }
-section#redes{
+
+/* section#redes{
+    text-align: right;
+} */
+
+section#redes {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     text-align: right;
 }
 section#redes img{
@@ -58,6 +67,7 @@ section#redes img:hover{
     /* A propriedade transition é usada para aplicar efeitos de transição suave quando uma propriedade CSS muda de valor. */
     transition: transform .3s border 1s;
 }
+/* esconder a barra de rolagem */
 ::-webkit-scrollbar{
     height: 0px;
     width: 0px;
