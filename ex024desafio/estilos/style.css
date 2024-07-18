@@ -58,3 +58,7 @@ section#redes img:hover{
     /* A propriedade transition é usada para aplicar efeitos de transição suave quando uma propriedade CSS muda de valor. */
     transition: transform .3s border 1s;
 }
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}

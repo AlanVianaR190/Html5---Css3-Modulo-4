@@ -22,6 +22,7 @@ a{
 a:hover{
     background-color: red;
 }
+/*  */
 ::-webkit-scrollbar{
     height: 0px;
     width: 0px;
