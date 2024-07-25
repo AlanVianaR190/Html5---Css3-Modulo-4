@@ -12,18 +12,24 @@
 </head>
 <body>
     <h1>Teste de Formulario</h1>
-    <form action="cadastro.php" method="post"></form>
-    <p>
-        <label for="iusu">Usuario</label>
-        <input type="text" name="usu" id="iusu">
-    </p>
-    <p>
-        <label for="isen">Senha</label>
-        <input type="password" name="sen" id="isen">
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuario</label>
+            <!-- O atributo required é usado para indicar que o campo deve ser preenchido antes que o formulário possa ser enviado. -->
+            <input type="text" name="usu" id="iusu" required minlength="3" maxlength="20" size="11"
+            placeholder="Nome do usuario" autocomplete="username">
+            <!-- O atributo placeholder é usado para fornecer uma dica ou exemplo de entrada que aparece no campo de entrada quando ele está vazio. -->
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <!-- Os atributos maxlength e minlength são usados para especificar o número máximo e mínimo de caracteres que um campo de entrada pode aceitar. -->
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="10" size="10" placeholder="Minimo 8 letras" autocomplete="current-password">
+            <!-- O atributo autocomplete na tag input é utilizado para especificar se o navegador deve ou não sugerir e preencher automaticamente os valores para o campo de entrada com base nos dados que o usuário já inseriu anteriormente. -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
