@@ -9,8 +9,17 @@
     <h1>Teste de formulario</h1>
     <form action="cadastro.php" method="get">
         <fieldset>
+            <legend>Sexo</legend>
+            <!-- O elemento <input type="radio"> em HTML é usado para criar botões de rádio em um formulário. Botões de rádio são um grupo de opções onde o usuário pode selecionar apenas uma opção por vez. Todos os botões de rádio que pertencem ao mesmo grupo compartilham o mesmo valor de name. -->
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+            <!-- O atributo value no elemento <input> do tipo radio especifica o valor que será enviado ao servidor quando o formulário for submetido e esse botão de rádio estiver selecionado. -->
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
             <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br>
+            <!-- O elemento <input> do tipo checkbox é utilizado em formulários HTML para permitir que os usuários selecionem uma ou mais opções de um conjunto. -->
+            <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label><br>
+            <!-- O atributo checked no elemento <input type="checkbox"> é utilizado para especificar que a caixa de seleção deve estar marcada por padrão quando a página é carregada. -->
             <input type="checkbox" name="futs" id="ifuts"><label for="ifuts">Futsal</label><br>
             <input type="checkbox" name="futv" id="ifutv"><label for="ifutv">Futvoley</label><br>
             <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basquete</label><br>
