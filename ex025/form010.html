@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="inasc">Em que ano voce nasceu:</label>
+            <input type="number" name="nasc" id="inasc" min="1900" max="2023" oninput="calcIdad()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <!-- A tag <script> no HTML é usada para definir scripts de cliente, como JavaScript. Esta tag permite que você adicione funcionalidade interativa às suas páginas web, manipule elementos da página, responda a eventos do usuário, e muito mais. -->
+    <script>
+        function calcIdad(){
+            let atual = new Date().getFullYear();
+            iidade.innerHTML = Number(atual) - Number(inasc.value);
+        }
+    </script>
+</body>
+</html>

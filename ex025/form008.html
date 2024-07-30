@@ -7,9 +7,10 @@
 </head>
 <body>
     <h1>Teste de formulario</h1>
-    <form action="" method="get">
+    <form action="cadastro.php" method="get">
         <p>
             <label for="in1">N1:</label>
+            <!-- O atributo oninput no HTML é usado para definir um script ou chamar uma função JavaScript que será executada sempre que o valor de um elemento <input> for modificado. Este evento é acionado a cada mudança no valor do campo, ou seja, a cada tecla pressionada, corte, colagem, arraste ou qualquer outra ação que modifique o valor do <input>. -->
             <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </p>
         <p>
@@ -18,6 +19,7 @@
         </p>
         <p>
             <label for="isoma">Soma:</label>
+            <!-- A tag <output> no HTML é usada para representar o resultado ou a saída de um script. Essa tag é especialmente útil quando você deseja exibir o resultado de operações realizadas por scripts, como cálculos matemáticos, processamento de dados ou interações com o usuário. -->
             <output name="soma" id="isoma">0</output>
         </p>
         <div>
