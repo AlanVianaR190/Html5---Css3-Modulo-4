@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="" method="post">
+        <p>
+            <label for="istad">Estado:</label>
+            <!-- A tag <select> no HTML é usada para criar uma lista suspensa (dropdown) de opções. -->
+            <select name="stad" id="istad">
+                
+                <!-- A tag <option> é usada dentro de uma tag <select> para definir as opções que podem ser escolhidas em uma lista suspensa (dropdown). Cada <option> representa uma escolha única dentro da lista. -->
+                <option value="" selected>--- Escolha ---</option>
+                <!-- O atributo selected na tag <option> é usado para definir a opção que será selecionada por padrão quando a página é carregada. -->
+
+                <!-- A tag <optgroup> é usada dentro de uma tag <select> para agrupar opções logicamente relacionadas em uma lista suspensa (dropdown). -->
+                <optgroup label="Regiao Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <!-- O atributo list no elemento <input> é usado para associar o campo de entrada a uma lista de opções predefinidas, que são definidas com a tag <datalist>. Quando o usuário começa a digitar no campo de entrada, o navegador pode sugerir opções da lista associada, facilitando a seleção de valores predefinidos. -->
+            <datalist id="listprof">
+                <option>Front-End</option>
+                <option>Back-End</option>
+                <option>Web Designer</option>
+                <option>Administrador de Banco de Dados</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <!-- A tag <textarea> no HTML é usada para criar uma área de texto multilinha em um formulário, rows: especifica o número de linhas visíveis na área de texto, cols: especifica o número de colunas visíveis na área de texto. -->
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!-- Como o metodo get tem uma limitação de 3kb utilizar o metodo post no caso de envio de arquivos -->
+</body>
+</html>
