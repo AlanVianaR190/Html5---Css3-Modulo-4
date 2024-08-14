@@ -1,5 +1,54 @@
 @charset "UTF-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
 html, body{
+    background-color: lightgray;
+}
+header{
+    background-color: rgb(148, 148, 148);
+}
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+menu{
+    /* O atributo display em CSS é uma propriedade fundamental que define como um elemento HTML deve ser exibido no documento. No caso do block faz com que o elemento seja exibido como um bloco, ocupando toda a largura disponível.  */
+    display: block;
+}
+menu > ul{
+    /* O atributo list-style-type em CSS é utilizado para definir o estilo dos marcadores (bullets) em listas, seja em listas ordenadas (<ol>) ou não ordenadas (<ul>).  */
+    list-style-type: none;
+}
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(87, 87, 87);
+    text-align: center;
+    color: white;
+    border-top: 2px solid gray;
+}
+menu > ul > li > a:hover{
     background-color: gray;
+}
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+article > h2{
+    padding-bottom: 20px;
+}
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    /* O atributo text-indent em CSS é utilizado para definir o recuo da primeira linha de um parágrafo ou bloco de texto. */
+    text-indent: 20px;
 }
