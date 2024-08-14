@@ -16,8 +16,8 @@ header > h1{
     text-align: center;
 }
 menu{
-    /* O atributo display em CSS é uma propriedade fundamental que define como um elemento HTML deve ser exibido no documento. No caso do block faz com que o elemento seja exibido como um bloco, ocupando toda a largura disponível.  */
-    display: block;
+    /* O atributo display em CSS é uma propriedade fundamental que define como um elemento HTML deve ser exibido no documento. No caso de block faz com que o elemento seja exibido como um bloco, ocupando toda a largura disponível. Se extiver none o elemento é completamente ocultado da página.  */
+    display: none;
 }
 menu > ul{
     /* O atributo list-style-type em CSS é utilizado para definir o estilo dos marcadores (bullets) em listas, seja em listas ordenadas (<ol>) ou não ordenadas (<ul>).  */
@@ -51,4 +51,19 @@ article > p{
     margin-bottom: 20px;
     /* O atributo text-indent em CSS é utilizado para definir o recuo da primeira linha de um parágrafo ou bloco de texto. */
     text-indent: 20px;
+}
+
+/* configurando o icone menu */
+span#burger{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    /* O atributo cursor é utilizado para controlar a aparência do cursor do mouse quando ele passa sobre um elemento específico na página. */
+    cursor: pointer;
+}
+span#burger:hover{
+    background-color: white;
+    color: black;
 }
