@@ -33,15 +33,15 @@
         </article>
     </main>
     <script>
+        // Controla a exibição do menu (<menu id="itens">). Quando o usuário clica no ícone do menu (o <span> com id="burger"), essa função alterna entre mostrar (display: block) ou esconder (display: none) o menu.
         function clickMenu(){
-            // A propriedade itens... é uma referência a um elemento HTML, geralmente essa variável foi previamente definida no código JavaScript para apontar para um elemento específico na página
             if (itens.style.display == "block"){
                 itens.style.display = "none";
             } else{
                 itens.style.display = "block";
             }
         }
-        // 
+        // Verifica o tamanho da janela (largura) sempre que ela é redimensionada. Se a largura da janela for maior ou igual a 992 pixels, o menu é mostrado automaticamente (display: block); se for menor, o menu é escondido (display: none). Isso permite que o layout do menu se ajuste dinamicamente com base no tamanho da tela.
         function mudouTam(){
             if (window.innerWidth >= 992){
                 itens.style.display = "block";
