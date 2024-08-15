@@ -32,6 +32,10 @@
     /*  */
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    /*  */
+    transition: height 0.3s, width 0.3s;
+    /*  */
+    transition-timing-function: ease;
  }
  section#login > div#imagem{
     background: #5f2c82 url(../imagens/pexels-bruthethe.jpg) no-repeat;
