@@ -28,14 +28,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    /*  */
+    /* A propriedade overflow controla o que acontece com o conteúdo de um elemento quando ele transborda o tamanho definido para esse elemento (por exemplo, quando o conteúdo é maior que a altura ou largura do contêiner). */
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
-    /*  */
+    /* A propriedade transition é usada para definir a transição suave entre dois estados de um elemento ao longo de um tempo especificado. Ela permite que você especifique quais propriedades devem sofrer a transição, quanto tempo ela deve durar, e como a transição deve ser feita. */
     transition: height 0.3s, width 0.3s;
-    /*  */
+    /* A propriedade transition-timing-function define a velocidade da transição entre os estados de um elemento ao longo de um tempo especificado. Ela controla como a transição ocorre determinando se ela deve começar devagar, acelerar, desacelerar, ou seguir uma curva de velocidade personalizada. */
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
  }
  section#login > div#imagem{
     background: #5f2c82 url(../imagens/pexels-bruthethe.jpg) no-repeat;
@@ -60,13 +60,37 @@ form > div.campo{
    display: block;
    height: 40px;
    width: 100%;
-   border-radius: 5px;
+   border-radius: 8px;
    margin: 5px 0px;
+   border: 2px solid #5f2c82;
 }
 div.campo > label{
    display: none;
+}
+div.campo > span{
+   color: white;
+   /* background-color: black; */
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+}
+div.campo > input{
+   background-color: #97adb8;
+   font-size: 1em;
+   height: 100%;
+   border: 0px;
+   border-radius: 8px;
+   padding: 4px;
+   /* O calc() é uma função que permite fazer cálculos aritméticos diretamente dentro de uma regra de estilo. Isso é útil quando você precisa definir um valor que depende de vários fatores como porcentagens, valores fixos em pixels. */
+   width: calc(100% - 45px);
+   /* A propriedade transform é usada para aplicar transformações a um elemento como mover, rotacionar, escalar ou distorcer. */
+   transform: translateY(-12px);
+}
+div.campo > input:focus-within{
+   background-color: white;
+
 } 
-/*  */
+/* especificando o tipo de input  do qual a estilização sera aplicada */
 form > input[type=submit]{
    display: block;
    font-size: 1em;
